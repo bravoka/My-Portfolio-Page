@@ -1,1 +1,191 @@
 /* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+html, body { height: 100%; }
+body { 
+	margin: 0; 
+	font-family: Roboto, "Helvetica Neue", sans-serif; 
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-shadow:none;
+	text-rendering: optimizeLegibility;
+}
+
+ul {
+	list-style-type: none;
+	padding-left:0
+}
+
+h1,h2 {
+	text-decoration:underline;
+}
+
+.h160 {
+	max-height:160px;
+}
+
+.h54 {
+	max-height:54px;
+}
+
+.mat-tab-body-content {
+	text-align:center;
+	padding:0 1em;
+}
+
+.raised-box {
+	max-width:800px;
+	box-shadow: 0 1px 3px rgba(0,0,0,.15);
+	padding: .5em 1em;
+	margin: 1em auto;
+	transition: box-shadow 0.3s ease-out;
+	
+	text-align: left;
+
+
+
+	&:hover {
+		box-shadow: 0 1px 3px rgba(0,0,0,.35);
+	}
+}
+
+
+ul.margin-list {
+	li {
+		margin: 20px 0;
+	}
+}
+
+a {
+	color: #00a9ff;
+}
+
+a:visited {
+	color:#00a9ff;
+}
+
+a:hover {
+	color: #008bd1;
+}
+
+ul.work-list {
+	max-width: 800px;
+	margin:0 auto;
+
+	div {
+		margin:0.4em 0;
+	}
+
+	.role {
+		font-size: 20px;
+		font-weight:bold;
+	}
+
+	.company > img {
+		height:50px;
+	}
+
+	.time {
+		font-size: 13px;
+		font-style: italic;
+		color: rgba(0,0,0,.8);
+	}
+
+	.role, .company, .time, .responsibilities {
+		text-align:left;
+	}
+
+	li:not(:first-child) {
+		margin-top:70px;
+	}
+}
+
+.pub-list {
+	li {
+		display:flex;
+		vertical-align:middle;
+		justify-content:center;
+	}
+
+	div.link-wrap {
+		display:flex;
+		align-items:center;
+		padding-left: 12px;
+	}
+
+	img {
+		height:40px;
+	}
+
+}
+
+.skills-list {
+	max-width: 700px;
+	margin:0 auto;
+
+ 	li {
+ 		display:flex;
+ 		align-items: center;
+
+ 		div:first-child {
+ 			width:100px;
+ 			flex-shrink:0;
+ 		}
+
+ 		div:last-child {
+ 			text-align:left;
+ 		}
+
+
+ 		img {
+ 			height:40px;
+ 		}
+
+ 		img+span {
+ 			font-size:0.7em;
+ 			color: rgba(0,0,0,.75);
+ 			display:block;
+ 		}
+ 	}
+}
+
+.misc-list {
+
+	li div {
+		width: 200px;
+		height: 120px;
+		margin:0 auto;
+		line-height:120px;
+		transition: box-shadow 0.2s ease-out;
+
+		&:hover {
+			box-shadow: 0 1px 3px rgba(0,0,0,.35);
+		}
+
+		img {
+			vertical-align:middle;
+			// display:inline-block;
+		}
+	}
+}
+
+.portfolio-list {
+	text-align:left;
+	li {
+		display:flex;
+
+		div:first-child {
+			width: 112px;
+			flex-shrink:0;
+		}
+
+		div:last-child {
+			span {
+				margin-top:0.5em;
+				display:block;
+				font-size:0.8em;
+				font-weight:bold;
+				color:rgba(0,0,0,.7);
+			}
+		}
+	}
+}
