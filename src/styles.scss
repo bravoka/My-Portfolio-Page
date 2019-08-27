@@ -51,7 +51,12 @@ h1,h2 {
 
 ul.margin-list {
 	li {
-		margin: 20px 0;
+		margin: 20px auto;
+
+	}
+
+	&.skinny li {
+		max-width: 200px;
 	}
 }
 
@@ -187,5 +192,26 @@ ul.work-list {
 				color:rgba(0,0,0,.7);
 			}
 		}
+	}
+}
+
+.cv-wrapper {
+	width:80px;
+	display:block;
+	text-align:center;
+}
+
+.icon-text-inline {
+	display:flex;
+	flex-direction: inline;
+	align-items:center;
+	margin: 16px 0;
+
+	div:first-child {
+		margin-right:20px;
+	}
+
+	img {
+		width:34px;
 	}
 }
